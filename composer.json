@@ -1,0 +1,17 @@
+{
+    "name": "vendor\/package",
+    "description": "A PHP package template repository.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vendor",
+            "email": "name@domain.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Package\\": "src"
+        }
+    }
+}

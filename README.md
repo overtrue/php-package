@@ -1,6 +1,6 @@
-<h1 align="center"> package </h1>
+<h1 align="center">PHP Package Template </h1>
 
-<p align="center"> A PHP package template repository..</p>
+<p align="center"> A template repository for PHP package.</p>
 
 
 ## Installing

@@ -1,5 +1,5 @@
 {
-    "name": "vendor/package",
+    "name": "overtrue/php-package",
     "description": "A PHP package template repository.",
     "license": "MIT",
     "authors": [
@@ -18,6 +18,18 @@
     "autoload": {
         "psr-4": {
             "Vendor\\Package\\": "src"
+        }
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "composer test",
+                "composer fix-style"
+            ],
+            "pre-push": [
+                "composer test",
+                "composer check-style"
+            ]
         }
     },
     "scripts": {

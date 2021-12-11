@@ -1,6 +1,6 @@
-<h1 align="center">PHP Package Template </h1>
+# PHP Package Template
 
-<p align="center"> A template repository for PHP package.</p>
+A template repository for PHP package.
 
 [![Sponsor me](https://github.com/overtrue/overtrue/blob/master/sponsor-me-button-s.svg?raw=true)](https://github.com/sponsors/overtrue)
 

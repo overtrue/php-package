@@ -13,11 +13,11 @@
     },
     "require-dev": {
         "brainmaestro/composer-git-hooks": "^2.8",
-        "friendsofphp/php-cs-fixer": "^3.0",
         "mockery/mockery": "^1.2",
         "phpunit/phpunit": "^9.0",
         "vimeo/psalm": "^4.10",
-        "jetbrains/phpstorm-attributes": "^1.0"
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "laravel/pint": "^1.10"
     },
     "autoload": {
         "psr-4": {
@@ -27,12 +27,12 @@
     "extra": {
         "hooks": {
             "pre-commit": [
-                "composer check-style",
+                "composer pint",
                 "composer test"
             ],
             "pre-push": [
-                "composer test",
-                "composer check-style"
+                "composer pint",
+                "composer test"
             ]
         }
     },
@@ -49,8 +49,9 @@
             "cghooks update"
         ],
         "cghooks": "vendor/bin/cghooks",
-        "check-style": "php-cs-fixer fix --using-cache=no --diff --dry-run --ansi",
-        "fix-style": "php-cs-fixer fix --using-cache=no --ansi",
+        "check-style": "vendor/bin/pint ./src ./tests --test",
+        "pint": "vendor/bin/pint ./src ./tests",
+        "fix-style": "vendor/bin/pint ./src ./tests",
         "test": "phpunit --colors",
         "psalm": "psalm --show-info=true --no-cache",
         "psalm-fix": "psalm --no-cache --alter --issues=MissingReturnType,MissingParamType"

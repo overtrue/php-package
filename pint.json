@@ -1,0 +1,12 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "simplified_null_return": true,
+        "braces": false,
+        "new_with_braces": true,
+        "method_chaining_indentation": true,
+        "phpdoc_align": {
+            "align": "left"
+        }
+    }
+}

@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [8.4]
+        php: [8.3]
 
     name: PHP ${{ matrix.php }}
 
@@ -26,6 +26,7 @@ jobs:
           php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip
           coverage: none
+          tools: composer:v2
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-interaction --no-progress

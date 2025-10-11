@@ -2,8 +2,7 @@
 *.DS_Store
 /vendor
 /coverage
-/hooks
 composer.lock
 .subsplit
-cghooks.lock
 .phpunit.result.cache
+.phpunit.cache

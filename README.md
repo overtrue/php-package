@@ -2,8 +2,6 @@
 
 A template repository for PHP package.
 
-[![Sponsor me](https://github.com/overtrue/overtrue/blob/master/sponsor-me-button-s.svg?raw=true)](https://github.com/sponsors/overtrue)
-
 
 ## Installing
 
@@ -20,12 +18,6 @@ TODO
 [![Sponsor me](https://github.com/overtrue/overtrue/blob/master/sponsor-me.svg?raw=true)](https://github.com/sponsors/overtrue)
 
 如果你喜欢我的项目并想支持它，[点击这里 :heart:](https://github.com/sponsors/overtrue)
-
-## Project supported by JetBrains
-
-Many thanks to Jetbrains for kindly providing a license for me to work on this and other open-source projects.
-
-[![](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://www.jetbrains.com/?from=https://github.com/overtrue)
 
 
 ## Contributing
